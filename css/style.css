@@ -1,0 +1,268 @@
+/***Navegação***/
+.navbar {
+  background-color: #082149;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  width: 80%;
+}
+
+a {
+  font-family: "Roboto Flex", sans-serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #f1f8fe;
+  gap: 15px;
+}
+
+a:hover {
+  color: #e9eaec;
+}
+
+ul {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 100px;
+  flex-wrap: wrap;
+}
+.navbar-link {
+  gap: 15px;
+}
+/***Final da navegação ***/
+/**Início do banner**/
+.banner {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+}
+.banner-imagem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 410px;
+  background: #f8a600;
+  margin-left: 79%;
+  width: 25px;
+  height: 25px;
+}
+
+.banner-imagem::after {
+  content: "";
+  position: relative;
+  display: block;
+  background: #f8a50060;
+  width: 100%;
+  height: 2px;
+}
+
+.frase {
+  display: block;
+  position: absolute;
+  font-family: "Roboto Flex", sans-serif;
+  color: #042860;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 480px;
+  margin-top: 100px;
+}
+.frase::before {
+  content: "";
+  display: block;
+  background: #042860;
+  width: 120px;
+  height: 5px;
+  margin-bottom: 20px;
+}
+.telefone {
+  display: block;
+  position: absolute;
+  font-family: "Roboto Flex", sans-serif;
+  color: #f8a600;
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-top: 200px;
+  margin-left: 740px;
+}
+/***Final do banner****/
+/***Início da section**/
+.titulo {
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Roboto Flex", sans-serif;
+  color: #042860;
+  font-weight: 800;
+  margin-top: 70px;
+}
+ul {
+  list-style: none;
+  display: relative;
+}
+.info-1 {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+.info-2 {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+}
+.circulo1 {
+  display: block;
+  margin-right: 10px;
+  margin-top: 36px;
+  width: 10px;
+  height: 10px;
+}
+.circulo2 {
+  display: block;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+}
+.texto {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  text-align: start;
+  margin-top: 40px;
+}
+.btn-layout {
+  display: flex;
+  align-content: space-between;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px;
+}
+.btn-esquerdo {
+  border: 2px solid #686c6f;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #042860;
+}
+.btn-direito {
+  border: 2px solid #686c6f;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #042860;
+}
+/**Final da section***/
+.footer-background {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 30px;
+  width: 100%;
+  background-color: #042860;
+}
+.copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: start;
+  margin-top: 40px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.719);
+}
+.logos-footer {
+  display: flex;
+}
+.logo-1 {
+  display: block;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
+}
+.logo-2 {
+  margin-left: 10px;
+}
+
+/***responsivo***/
+
+@media (max-width: 900px) {
+  .logo {
+    display: flex;
+    margin-block: 10px;
+    margin-left: 20px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner {
+    display: none;
+  }
+  .banner-imagem::before {
+    display: none;
+  }
+  .frase {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: start;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .frase::before {
+    display: flex;
+    justify-content: start;
+  }
+  .telefone {
+    margin-left: 0px;
+    text-align: start;
+    margin-top: 250px;
+  }
+  .titulo {
+    margin-top: 400px;
+    text-align: start;
+  }
+  .circulo1 {
+    display: none;
+  }
+  .circulo2 {
+    display: none;
+  }
+  .info-1 {
+    text-align: start;
+  }
+  .info-2 {
+    text-align: start;
+  }
+  .btn-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 50px;
+  }
+  .btn-esquerdo {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .btn-direito {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .footer-background {
+    display: flex;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .logo-1 {
+    display: none;
+  }
+  .logo-2 {
+    display: none;
+  }
+}
