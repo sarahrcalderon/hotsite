@@ -14,3 +14,6 @@ Serão considerados diferenciais:
 - Utilizar a metodologia BEM (http://getbem.com/).
 - Estruturar o código conforme boas práticas (https://medium.com/academymeteor/boas-pr%C3%A1ticas-para-programa%C3%A7%C3%A3o-web-html-e-css-c2a62f1b9560).
 - Pensar numa estrutura para o mobile (e utilizar o conceito mobile-first).
+
+
+![layout](https://user-images.githubusercontent.com/102614238/168487016-0d869a3f-7be2-407e-8b9d-f2192604657d.jpg)
