@@ -1,4 +1,5 @@
-# hotsite
+https://sarahrcalderon.github.io/hotsite/
+
 # Desafio | Hotsite
 
 Você deve implementar o HTML e CSS da página web conforme a imagem `layout.jpg`.
